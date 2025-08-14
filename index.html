@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Omar Ahmed Gouda – CV</title>
+    <meta name="description" content="Omar Ahmed Gouda - Mechatronics Engineer CV, Embedded Systems, Projects, Skills, Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="top-icons-nav">
+      <button onclick="showSection('about')"><i class="fa-solid fa-user"></i></button>
+      <button onclick="showSection('expertise')"><i class="fa-solid fa-hammer"></i></button>
+      <button onclick="showSection('education')"><i class="fa-solid fa-graduation-cap"></i></button>
+      <button onclick="showSection('certificates')"><i class="fa-solid fa-award"></i></button>
+      <button onclick="showSection('skills')"><i class="fa-solid fa-code"></i></button>
+      <button onclick="showSection('projects')"><i class="fa-solid fa-robot"></i></button>
+      <button onclick="showSection('achievements')"><i class="fa-solid fa-trophy"></i></button>
+      <button onclick="showSection('testimonials')"><i class="fa-solid fa-quote-left"></i></button>
+      <button onclick="showSection('languages')"><i class="fa-solid fa-language"></i></button>
+      <button onclick="showSection('contact')"><i class="fa-solid fa-envelope"></i></button>
+    </nav>
+    <button id="themeToggle" class="theme-toggle-btn" title="Toggle Theme">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+    <div class="fibers-section">
+      <img src="D:\my prot\photo.jfif" alt="Fibers" class="fibers-img" id="profileImg" />
+      <div class="fibers-def">
+        <h2>Omar Ahmed Gouda</h2>
+        <p>Innovative Mechatronics Engineer | Embedded Systems | Control & Mechanical Design</p>
+      </div>
+    </div>
+    <!-- Popup Modal for image -->
+    <div id="imgModal" class="img-modal">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <img class="img-modal-content" id="modalImg" src="D:\my prot\photo.jfif" alt="Profile Large" />
+    </div>
+    <main>
+      <!-- فقط قسم About Me في الصفحة الرئيسية -->
+      <section id="about" class="cv-section">
+        <div class="about-header">
+          <h1>About Me</h1>
+          <div>
+            <a href="YOUR_CV_LINK_HERE" target="_blank" class="cv-btn" title="View My CV">
+              <i class="fa-solid fa-file-lines"></i> View My CV
+            </a>
+            <a href="YOUR_CV_PDF_LINK" download class="cv-btn" title="Download CV">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+          </div>
+        </div>
+        <p>
+          I am a passionate and results-driven <strong>Embedded Systems & Control Engineer</strong> with a solid foundation in mechanical design, sheet metal fabrication, and software development.
+        </p>
+        <p>
+          I specialize in designing, developing, and implementing innovative solutions to complex engineering problems. My work is driven by a commitment to quality, scalability, and practical impact—whether through custom PCB designs, advanced control systems, or cross-disciplinary mechatronics projects.
+        </p>
+        <p>
+          I thrive in dynamic environments where I can integrate hardware and software seamlessly, and I’m always eager to push the boundaries of technology to deliver real-world solutions.
+        </p>
+      </section>
+      <!-- صفحة المهارات الجديدة -->
+      <section id="expertise" class="cv-section expertise-section" style="display:none;">
+        <h1><i class="fa-solid fa-hammer"></i> My Expertise</h1>
+        <div class="about-cards">
+          <div class="about-card">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Embedded Systems & Control</span>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-gears"></i>
+            <span>Mechanical Design & Sheet Metal</span>
+          </div>
+          <div class="about-card">
+            <i class="fa-brands fa-js"></i>
+            <span>Software Development</span>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Innovative Solutions</span>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Dynamic & Fast Learner</span>
+          </div>
+        </div>
+      </section>
+      <!-- التعليم -->
+      <section id="education" class="cv-section" style="display:none;">
+        <h1><i class="fa-solid fa-graduation-cap"></i> Education</h1>
+        <div class="edu-card">
+          <h2>Faculty of Engineering, Egyptian Chinese University</h2>
+          <p>09/2023 – 09/2028</p>
+          <p>Bachelor of Mechatronics Engineering</p>
+        </div>
+      </section>
+      <!-- الشهادات -->
+      <section id="certificates" class="cv-section" style="display:none;">
+        <h1><i class="fa-solid fa-award"></i> Certificates</h1>
+        <div class="certs-list">
+          <div class="cert-card">
+            <i class="fa-solid fa-award"></i>
+            <span>SolidWorks Professional Certificate</span>
+            <a href="https://www.solidworks.com/certification" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-award"></i>
+            <span>Arduino Embedded Systems Workshop</span>
+            <a href="https://www.arduino.cc/en/Main/Certificate" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <i class="fa-solid fa-award"></i>
+            <span>MATLAB for Engineers</span>
+            <a href="https://matlabacademy.mathworks.com/" target="_blank">View Certificate</a>
+          </div>
+        </div>
+      </section>
+      <!-- اللغات -->
+      <section id="languages" class="cv-section" style="display:none;">
+        <h1><i class="fa-solid fa-language"></i> Languages</h1>
+        <div class="lang-list">
+          <div class="lang-card">
+            <i class="fa-solid fa-globe"></i>
+            <span>Arabic</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-card">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <span class="lang-level">Professional</span>
+          </div>
+        </div>
+      </section>
+      <!-- المهارات -->
+      <section id="skills" class="cv-section" style="display:none;">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fa-brands fa-arduino"></i><span>Arduino</span></div>
+          <div class="skill-card"><i class="fa-solid fa-microchip"></i><span>Embedded Systems</span></div>
+          <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+          <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fa-solid fa-c"></i><span>C / C++</span></div>
+          <div class="skill-card"><i class="fa-solid fa-gears"></i><span>Mechanical Design</span></div>
+          <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span>MATLAB</span></div>
+          <div class="skill-card"><i class="fa-solid fa-cloud"></i><span>IoT</span></div>
+          <div class="skill-card"><i class="fa-solid fa-file-word"></i><span>Microsoft Office</span></div>
+          <div class="skill-card"><i class="fa-solid fa-layer-group"></i><span>SolidWorks</span></div>
+          <div class="skill-card"><i class="fa-solid fa-bolt"></i><span>Stress Analysis</span></div>
+          <div class="skill-card"><i class="fa-solid fa-sheet-plastic"></i><span>Sheet Metal</span></div>
+          <div class="skill-card"><i class="fa-solid fa-microchip"></i><span>PCB Design</span></div>
+        </div>
+        <!-- Progress Bars Example -->
+        <div class="skill-bar">
+          <span>Embedded Systems</span>
+          <div class="bar"><div style="width:90%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>Mechanical Design</span>
+          <div class="bar"><div style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <span>Software Development</span>
+          <div class="bar"><div style="width:80%"></div></div>
+        </div>
+      </section>
+      <!-- المشاريع -->
+      <section id="projects" class="cv-section" style="display:none;">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+          <div class="project-card">
+            <span class="project-icon"><i class="fa-solid fa-dumbbell"></i></span>
+            <h2>Fitness Program</h2>
+            <p>
+              Website for athletes to calculate calories, create diets, and guide healthy eating and exercise.
+            </p>
+            <a class="project-link" href="https://github.com/omar2095/fitness-program" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <span class="project-icon"><i class="fa-solid fa-robot"></i></span>
+            <h2>Lifting Weights</h2>
+            <p>
+              Mechanical weightlifter with arm movement (180°) and body rotation (360°), supporting required weights.
+            </p>
+            <a class="project-link" href="https://github.com/omar2095/lifting-weights" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <span class="project-icon"><i class="fa-solid fa-gears"></i></span>
+            <h2>Pinion Shaft</h2>
+            <p>
+              Gear system converting engine rotation to linear motion for steering, with cost-effective modifications.
+            </p>
+            <a class="project-link" href="https://github.com/omar2095/pinion-shaft" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <span class="project-icon"><i class="fa-solid fa-seedling"></i></span>
+            <h2>Smart Irrigation System</h2>
+            <p>
+              Senses soil fertility and waters crops at the right time to improve yield.
+            </p>
+            <a class="project-link" href="https://github.com/omar2095/smart-irrigation" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+      <!-- صفحة الإنجازات -->
+      <section id="achievements" class="cv-section" style="display:none;">
+        <h1><i class="fa-solid fa-trophy"></i> Achievements</h1>
+        <div class="counters">
+          <div>
+            <span id="projectsCount">4</span><br>Projects
+          </div>
+          <div>
+            <span id="yearsCount">2</span><br>Years Experience
+          </div>
+          <div>
+            <span id="certsCount">3</span><br>Certificates
+          </div>
+        </div>
+        <div class="achievements-list">
+          <div class="achievement-card">
+            <i class="fa-solid fa-star"></i>
+            <span>Winner of University Robotics Competition 2024</span>
+          </div>
+          <div class="achievement-card">
+            <i class="fa-solid fa-medal"></i>
+            <span>Top 5 in National Mechatronics Challenge</span>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials" class="cv-section" style="display:none;">
+        <h1><i class="fa-solid fa-quote-left"></i> Testimonials</h1>
+        <div class="testimonial-card">
+          <p>"Omar is a creative engineer who always delivers high-quality work on time."</p>
+          <span>- Dr. Ahmed, ECU</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"His technical skills and teamwork are outstanding. Highly recommended!"</p>
+          <span>- Eng. Sara, Mentor</span>
+        </div>
+      </section>
+      <!-- التواصل والحسابات -->
+      <section id="contact" class="cv-section" style="display:none;">
+        <h1>Contact & Accounts</h1>
+        <div class="contact-list">
+          <div class="contact-card"><i class="fa-solid fa-envelope"></i> oma2005r200@gmail.com</div>
+          <div class="contact-card"><i class="fa-solid fa-phone"></i> 01096009904</div>
+          <div class="contact-card"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</div>
+          <div class="contact-card"><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/omar-ahmed-2282602b2" target="_blank">LinkedIn</a></div>
+          <div class="contact-card"><i class="fa-brands fa-github"></i> <a href="https://github.com/omar2095" target="_blank">GitHub</a></div>
+        </div>
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+        </form>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/omar-ahmed-2282602b2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/omar2095" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </section>
+    </main>
+    <button id="toTopBtn" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+    <footer>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/omar-ahmed-2282602b2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/omar2095" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <p>&copy; <span id="year"></span> Omar Ahmed Gouda. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
